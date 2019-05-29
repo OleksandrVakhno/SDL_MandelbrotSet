@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="SDL_MandelbrotSet"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SDL_MandelbrotSet">
+				<Option output="/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake-build-debug/SDL_MandelbrotSet" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/SDL2"/>
+					<Add directory="/Users/alex/Dev/С++/SDL_MandelbrotSet/includes"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake-build-debug/Makefile&quot;  VERBOSE=1 SDL_MandelbrotSet"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SDL_MandelbrotSet/fast">
+				<Option output="/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake-build-debug/SDL_MandelbrotSet" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/SDL2"/>
+					<Add directory="/Users/alex/Dev/С++/SDL_MandelbrotSet/includes"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake-build-debug/Makefile&quot;  VERBOSE=1 SDL_MandelbrotSet/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/alex/Dev/С++/SDL_MandelbrotSet/includes/Fractal.h">
+			<Option target="SDL_MandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/alex/Dev/С++/SDL_MandelbrotSet/includes/Mandelbrot.h">
+			<Option target="SDL_MandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/alex/Dev/С++/SDL_MandelbrotSet/includes/RGB.h">
+			<Option target="SDL_MandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/alex/Dev/С++/SDL_MandelbrotSet/includes/Screen.h">
+			<Option target="SDL_MandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/alex/Dev/С++/SDL_MandelbrotSet/includes/Zoom.h">
+			<Option target="SDL_MandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/alex/Dev/С++/SDL_MandelbrotSet/includes/ZoomList.h">
+			<Option target="SDL_MandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/alex/Dev/С++/SDL_MandelbrotSet/main.cpp">
+			<Option target="SDL_MandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/alex/Dev/С++/SDL_MandelbrotSet/src/Fractal.cpp">
+			<Option target="SDL_MandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/alex/Dev/С++/SDL_MandelbrotSet/src/Mandelbrot.cpp">
+			<Option target="SDL_MandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/alex/Dev/С++/SDL_MandelbrotSet/src/RGB.cpp">
+			<Option target="SDL_MandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/alex/Dev/С++/SDL_MandelbrotSet/src/Screen.cpp">
+			<Option target="SDL_MandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/alex/Dev/С++/SDL_MandelbrotSet/src/ZoomList.cpp">
+			<Option target="SDL_MandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/alex/Dev/С++/SDL_MandelbrotSet/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake/FindSDL2.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

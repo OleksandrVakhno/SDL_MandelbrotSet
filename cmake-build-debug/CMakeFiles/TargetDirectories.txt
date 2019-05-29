@@ -1,0 +1,3 @@
+/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/alex/Dev/С++/SDL_MandelbrotSet/cmake-build-debug/CMakeFiles/SDL_MandelbrotSet.dir
