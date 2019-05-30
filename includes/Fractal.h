@@ -32,7 +32,6 @@ namespace fractal {
 
         bool _gotFirstRange{false};
 
-
         Screen* _screen;
         unique_ptr<ZoomList> _zoomlist;
 
@@ -40,8 +39,6 @@ namespace fractal {
         unique_ptr<int[]> _fractal;
     private:
         void calculateIterations();
-
-        void  calculateTotalIterations();
 
         int getRange(int iterations) const;
 
@@ -58,6 +55,8 @@ namespace fractal {
         void calculateRangePixelTotals();
 
         void draw();
+
+        void draw_zoom();
 
 
     };

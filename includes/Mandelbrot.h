@@ -9,7 +9,7 @@
 namespace fractal {
     class Mandelbrot {
     public:
-        static const int MAX_ITERATIONS = 1000;
+        static int MAX_ITERATIONS;
 
     public:
         Mandelbrot();

@@ -10,9 +10,12 @@ namespace fractal{
                                              _fractal(new int[_width*_height]{}),
                                               _zoomlist(new ZoomList(_width, _height))
     {
+        //initial Zoom value
         _zoomlist->add(Zoom(_width/2, _height/2 ,4.0/_width));
     }
 
+
+    //calculating iterations for each pixel according to zoom values
     void Fractal::calculateIterations(){
         for(int y=0; y<_height;y++){
             for(int x=0; x<_width; x++){
@@ -28,22 +31,14 @@ namespace fractal{
         }
     }
 
-    void Fractal::calculateTotalIterations(){
-
-        for( int i= 0; i<Mandelbrot::MAX_ITERATIONS; i++){
-            _total += _histogram[i];
-        }
-    }
 
     void Fractal::draw() {
 
-        calculateIterations();
+        calculateIterations();//getting iterations for each pixel
 
-        calculateTotalIterations();
+        calculateRangePixelTotals();//getting the max number of pixels for each color range
 
-        calculateRangePixelTotals();
-
-
+        //calculating color for each pixel
         for(int y=0; y<_height;y++){
             for(int x=0; x<_width; x++){
 
@@ -67,7 +62,7 @@ namespace fractal{
                         totalPixels+= _histogram[i];
                     }
 
-
+                    //getting color and its intensity for each pixel
                     red = startColor.r + colorDiff.r*(double)totalPixels/rangeTotal;
                     green =  startColor.g + colorDiff.g*(double)totalPixels/rangeTotal;
                     blue =  startColor.b + colorDiff.b*(double)totalPixels/rangeTotal;
@@ -78,6 +73,17 @@ namespace fractal{
 
 
             }
+        }
+    }
+
+
+    //two step zoom in
+    void Fractal::draw_zoom() {
+        Mandelbrot::MAX_ITERATIONS =100;
+        while(Mandelbrot::MAX_ITERATIONS<=2000) {
+            draw();
+            _screen->update();
+            Mandelbrot::MAX_ITERATIONS += 1900;
         }
     }
 
@@ -95,6 +101,7 @@ namespace fractal{
 
     }
 
+    //max number of pixels for each range
     void Fractal::calculateRangePixelTotals(){
         int rangeIndex =0;
         for(int i =0 ; i < Mandelbrot::MAX_ITERATIONS; i++){
@@ -107,7 +114,7 @@ namespace fractal{
 
     }
 
-
+    //calculation range for a pixel with a specific number of iterations
     int Fractal::getRange(int iterations) const {
         int rangeIndex = 0;
         for(int i = 1; i<_range.size();i++){

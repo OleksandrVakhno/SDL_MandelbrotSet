@@ -10,6 +10,7 @@ namespace display{
     void ZoomList::add(const display::Zoom &zoom) {
         zooms.push_back(zoom);
 
+        //calculating new center coordinates according to the zoom
         _xCenter += (zoom.x - double(_width)/2)*_scale;
         _yCenter += (zoom.y - double(_height)/2)*_scale;
 
@@ -17,6 +18,7 @@ namespace display{
 
     }
     pair<double,double> ZoomList::doZoom(int x, int y){
+        //calculating coordinates for a specific pixel according to the new zoom center
         double xFractal =(x - double(_width)/2)* _scale + _xCenter;
         double  yFractal =(y - double(_height)/2)* _scale + _yCenter;
 

@@ -17,7 +17,7 @@ namespace display{
             SDL_Quit();
             throw WindowException();
         }
-        _renderer = SDL_CreateRenderer(_window, -1, SDL_RENDERER_ACCELERATED);
+        _renderer = SDL_CreateRenderer(_window, -1, SDL_RENDERER_PRESENTVSYNC);
         if(_renderer == NULL){
             SDL_DestroyWindow(_window);
             SDL_Quit();
@@ -56,15 +56,13 @@ namespace display{
         _buffer1[(y*SCREEN_WIDTH)+x]=color;
     }
 
-
     void Screen::update() {
         SDL_UpdateTexture(_texture, NULL, _buffer1, 1000*sizeof(Uint32));
         SDL_RenderClear(_renderer);
         SDL_RenderCopy(_renderer,_texture, NULL, NULL);
         SDL_RenderPresent(_renderer);
     }
-
-
+    
 
     bool Screen::quit() {
         SDL_Event event;

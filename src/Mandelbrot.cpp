@@ -13,7 +13,7 @@ namespace fractal {
 
     Mandelbrot::~Mandelbrot() {}
 
-
+    //calculating iterations for each pixel according to Mandelbrot Algorithm
     int Mandelbrot::getIterations(double x, double y) {
 
         complex<double> z = 0;

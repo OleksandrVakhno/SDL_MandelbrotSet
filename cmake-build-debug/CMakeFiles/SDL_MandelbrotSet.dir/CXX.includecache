@@ -42,13 +42,19 @@ vector
 utility
 -
 
-/Users/alex/Dev/С++/SDL_MandelbrotSet/main.cpp
-iostream
--
-unistd.h
--
+/Users/alex/Dev/С++/SDL_MandelbrotSet/src/Fractal.cpp
 Fractal.h
-/Users/alex/Dev/С++/SDL_MandelbrotSet/Fractal.h
+/Users/alex/Dev/С++/SDL_MandelbrotSet/src/Fractal.h
+
+/Users/alex/Dev/С++/SDL_MandelbrotSet/src/Mandelbrot.cpp
+Mandelbrot.h
+/Users/alex/Dev/С++/SDL_MandelbrotSet/src/Mandelbrot.h
+complex
+-
+
+/Users/alex/Dev/С++/SDL_MandelbrotSet/src/ZoomList.cpp
+ZoomList.h
+/Users/alex/Dev/С++/SDL_MandelbrotSet/src/ZoomList.h
 
 /usr/local/include/SDL2/SDL.h
 SDL_main.h
